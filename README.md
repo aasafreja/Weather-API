@@ -8,7 +8,7 @@ This project is a Python-based ETL (Extract, Transform, Load) pipeline that fetc
 
 - weather_etl_functions.py: Contains functions to fetch weather data from OpenWeatherMap API, create a PostgreSQL table, insert data, and retrieve data from the database.
 - weather_etl_dag.py: Defines an Apache Airflow DAG to automate the ETL process.
-- weather_vis.py: Generates a temperature heatmap visualization (not provided in the code snippet but typically would be included).
+- weather_vis.py: Generates a temperature heatmap visualization.
 
 ## Requirements
 
