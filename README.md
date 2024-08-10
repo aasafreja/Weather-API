@@ -6,15 +6,16 @@ This project is a Python-based ETL (Extract, Transform, Load) pipeline that fetc
 
 ## Project Structure
 
--weather_api_airflow.py: Contains functions to fetch weather data from OpenWeatherMap API, create a PostgreSQL table, insert data, and retrieve data from the database; defines an Apache Airflow DAG to automate the ETL process.
--weather_vis.py: Generates a temperature heatmap visualization (not provided in the code snippet but typically would be included).
+- weather_etl_functions.py: Contains functions to fetch weather data from OpenWeatherMap API, create a PostgreSQL table, insert data, and retrieve data from the database.
+- weather_etl_dag.py: Defines an Apache Airflow DAG to automate the ETL process.
+- weather_vis.py: Generates a temperature heatmap visualization (not provided in the code snippet but typically would be included).
 
 ## Requirements
 
--Python 3.7+
--PostgreSQL
--Apache Airflow
--Python libraries: requests, psycopg2, dotenv, apache-airflow, datetime
+- Python 3.7+
+- PostgreSQL
+- Apache Airflow
+- Python libraries: requests, psycopg2, dotenv, apache-airflow, datetime
 
 ## Setting Up Environment Variables
 
@@ -60,5 +61,5 @@ To use the weather data API from OpenWeatherMap, you need an API key. Follow the
    ```env
    API_KEY=your-api-key-here
 
-   
+
 
